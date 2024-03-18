@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <style>
+        input[type=text]{
+            border: 2px solid black;
+			border-radius: 4px;
+        }
+        input[type=button]{
+            background-color: yellowgreen;
+			border: 2px solid black;
+			border-radius: 4px;
+            text-align: center;
+            margin: 3px;
+            display: inline-block;
+            cursor: pointer;
+           
+		 }  
+        fieldset{
+            font-weight: bold;
+            background-color: aquamarine;
+            max-width: 400px;
+            border-radius: 9px;
+            padding: 30px;
+        }
+        legend{
+            display: block;
+            color: red;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        label{
+            color: blue;
+        }
+
+      </style>
+    </head>
+    <body>
+        <form action="" name="frm" id="purchase" onsubmit="return calculatePurchase()">
+            <fieldset>
+                <legend>Complete the form to make a purchase</legend><br>
+                <label for="name">Name</label>
+                <input type="text" name="name"><br><br>
+                <label for="item">Item</label>
+                <input type="text" name="item"><br><br>
+                <label for="itemQuantity">Quantity</label>
+                <input type="text" name="quantity"><br><br>
+                <label for="price">Price</label>
+                <input type="text" name="price"><br><br>
+                <input type="button"  value="Make a purchase" id="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
